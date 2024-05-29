@@ -1,5 +1,8 @@
 import { destr } from 'destr';
 import ofetch from '@/utils/ofetch';
+import { config } from '@/config';
+import logger from '@/utils/logger';
+import proxy from './proxy';
 
 const getFakeGot = (defaultOptions?: any) => {
     const fakeGot = (request, options?: any) => {
@@ -60,7 +63,10 @@ const getFakeGot = (defaultOptions?: any) => {
             }
             delete options.cookieJar;
         }
-
+        
+        if (config.proxyUri) {
+            options.agent = proxy.agent;
+        }
         const response = ofetch(request, options);
 
         if (options?.responseType === 'arrayBuffer') {

@@ -5,7 +5,7 @@ const graphQLEndpointsPlain = [
     '/graphql/k5XapwcSikNsEsILW5FvgA/UserByScreenName',
     '/graphql/k3YiLNE_MAy5J-NANLERdg/HomeTimeline',
     '/graphql/3GeIaLmNhTm1YsUmxR57tg/UserTweetsAndReplies',
-    '/graphql/TOU4gQw8wXIqpSzA4TYKgg/UserMedia',
+    '/graphql/MOLbHrtk8Ovu7DUNOLcXiA/UserMedia',
     '/graphql/B8I_QCljDBVfin21TTWMqA/Likes',
     '/graphql/tD8zKvQzwY3kdx5yz6YmOw/UserByRestId',
     '/graphql/flaR-PUMshxFWZWPNpq4zA/SearchTimeline',
